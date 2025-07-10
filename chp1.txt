@@ -14,3 +14,12 @@ Order of creating a repository and commiting a file:
     5th: you can use 'git log' to check the time the user did the commit
     
     6th: if you want to add multiple files at a time use 'git add .' in cmd
+
+Managing changes in files/reverting changes locally (only works if file hasnt been commited/or added to staging area):
+    git diff fileName: to compare the current changes in the file thats was added
+                       and how the file was before these changes
+    
+    git checkout fileName: rollback the file to the last checkpoint it was commited in
+
+Unstage a file:
+    git restore --staged fileName

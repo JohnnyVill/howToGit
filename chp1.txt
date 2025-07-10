@@ -1,1 +1,10 @@
 testing the git repo
+
+Order of creating a repository and commiting a file:
+    1st: create the directory and files
+    2nd: iniitilize this directory using 'git init' in cmd
+    3rd: we have to track the files since they are currently untrack by using 'git add' in cmd
+    extra: to check it that have any untracked files you can use 'git status' in cmd
+            you can also see if the files are beign track usign the same cmd command
+    4th: commit the files by using 'git commit -m "commit message" ' in cmd
+    5th: you can use 'git log' to check the time the user did the commit

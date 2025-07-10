@@ -8,3 +8,4 @@ Order of creating a repository and commiting a file:
             you can also see if the files are beign track usign the same cmd command
     4th: commit the files by using 'git commit -m "commit message" ' in cmd
     5th: you can use 'git log' to check the time the user did the commit
+    6th: if you want to add multiple files at a time use 'git add .' in cmd

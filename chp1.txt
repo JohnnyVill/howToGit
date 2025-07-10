@@ -23,3 +23,9 @@ Managing changes in files/reverting changes locally (only works if file hasnt be
 
 Unstage a file:
     git restore --staged fileName
+
+Adding our local repository into remote repository in github:
+    1st: git remote add origin (paste url of remote repository that github provides)
+
+    2nd: now we can push our local repository to the remote repository using 
+          'git push -u origin main'

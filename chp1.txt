@@ -29,3 +29,5 @@ Adding our local repository into remote repository in github:
 
     2nd: now we can push our local repository to the remote repository using 
           'git push -u origin main'
+    extra: make sure the branch is called 'main' not master if called master use
+            'git -M main' in cmd

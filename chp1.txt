@@ -1,36 +1,46 @@
 testing the git repo
 
 Order of creating a repository and commiting a file:
-    1st: create the directory and files
+    1st: create the directory and files.
     
-    2nd: iniitilize this directory using 'git init' in cmd
+    2nd: iniitilize this directory using 'git init' in cmd.
     
-    3rd: we have to track the files since they are currently untrack by using 'git add' in cmd
+    3rd: we have to track the files since they are currently untrack by using 'git add' in cmd.
     extra: to check it that have any untracked files you can use 'git status' in cmd
-            you can also see if the files are beign track usign the same cmd command
+            you can also see if the files are beign track usign the same cmd command.
     
-    4th: commit the files by using 'git commit -m "commit message" ' in cmd
+    4th: commit the files by using 'git commit -m "commit message" ' in cmd.
     
-    5th: you can use 'git log' to check the time the user did the commit
+    5th: you can use 'git log' to check the time the user did the commit.
     
-    6th: if you want to add multiple files at a time use 'git add .' in cmd
+    6th: if you want to add multiple files at a time use 'git add .' in cmd.
 
 Managing changes in files/reverting changes locally (only works if file hasnt been commited/or added to staging area):
     git diff fileName: to compare the current changes in the file thats was added
-                       and how the file was before these changes
+                       and how the file was before these changes.
     
-    git checkout fileName: rollback the file to the last checkpoint it was commited in
+    git checkout fileName: rollback the file to the last checkpoint it was commited in.
 
 Unstage a file:
-    git restore --staged fileName
+    git restore --staged fileName : remove a sigle specified stageed file.
+
+    git rm --cached -r .  : to remove all staged files instead of just one.
 
 Adding our local repository into remote repository in github:
-    1st: git remote add origin (paste url of remote repository that github provides)
+    1st: git remote add origin (paste url of remote repository that github provides).
 
     2nd: now we can push our local repository to the remote repository using 
-          'git push -u origin main'
+          'git push -u origin main'.
     extra: make sure the branch is called 'main' not master if called master use
-            'git -M main' in cmd
+            'git -M main' in cmd.
 
     3rd: now every time to add and commit new code use  'git push' to push these changes to
-            the remote repository github
+            the remote repository github.
+
+Creating a gitignore file to prevent pushing files you want to keep private:
+    Add the fileName into the .gitignore file to prevent that file from being pushed.
+
+    *.log : to igorne all .log files
+    
+    *.txt : to ignore all file with a .txt extention
+

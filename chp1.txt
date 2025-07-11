@@ -44,3 +44,5 @@ Creating a gitignore file to prevent pushing files you want to keep private:
     
     *.txt : to ignore all file with a .txt extention
 
+    https://github.com/github/gitignore : premade collection from github of useful files to ignore
+

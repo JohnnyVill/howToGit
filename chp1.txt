@@ -1,6 +1,6 @@
 testing the git repo
 
-Order of creating a repository and commiting a file:
+ORDER OF CREATING A REPOSITORY AND COMMITING A FILE:
     1st: create the directory and files.
     
     2nd: iniitilize this directory using 'git init' in cmd.
@@ -15,29 +15,30 @@ Order of creating a repository and commiting a file:
     
     6th: if you want to add multiple files at a time use 'git add .' in cmd.
 
-Managing changes in files/reverting changes locally (only works if file hasnt been commited/or added to staging area):
+MANAGING CHANGES IN FILES/REVERTING CHANGES LOCALLY(only works if file hasnt been commited/or added to staging area):
     git diff fileName: to compare the current changes in the file thats was added
                        and how the file was before these changes.
     
     git checkout fileName: rollback the file to the last checkpoint it was commited in.
 
-Unstage a file:
+UNSTAGE A FILE:
     git restore --staged fileName : remove a sigle specified stageed file.
 
     git rm --cached -r .  : to remove all staged files instead of just one.
 
-Adding our local repository into remote repository in github:
+ADDING OUR LOCAL REPOSITORY INTO REMOTE REPOSITORY IN GITHUB:
     1st: git remote add origin (paste url of remote repository that github provides).
 
     2nd: now we can push our local repository to the remote repository using 
           'git push -u origin main'.
+
     extra: make sure the branch is called 'main' not master if called master use
             'git -M main' in cmd.
 
     3rd: now every time to add and commit new code use  'git push' to push these changes to
             the remote repository github.
 
-Creating a gitignore file to prevent pushing files you want to keep private:
+CREATING A .GITIGNORE FILE TO PREVENT PUSHING FILES YOU WANT TO KEEP PRIVATE:
     Add the fileName into the .gitignore file to prevent that file from being pushed.
 
     *.log : to igorne all .log files
@@ -46,9 +47,26 @@ Creating a gitignore file to prevent pushing files you want to keep private:
 
     https://github.com/github/gitignore : premade collection from github of useful files to ignore
 
-Cloning a github repo:
+CLONING A GITHUB REPO:
     1st: git clone <url>
+
     2nd: install all the npm packages using 'npm i'
     (extra) : do anything else the repo requires you to do
+    
     3rd: use node to run the server
+
+BRANCHING AND MERGING:
+    How to create a branch: git branch name-of-branch
+
+    Branching: allows the user to create a branch off of the main branch to test if these
+                features we are testing ing the branch are working and useful instead of
+                inserting directly into the Main. 
+
+    How to merge branch to Main: git merge name-of-branch. Make sure you are in the Main branch
+                                  and write this command to merge that branch to main (:q! to exit vim)
+
+    To know the branh you are on: there will be an * on the left of the branch name
+
+    How to switch branches: git checkout name-of branch
+
 

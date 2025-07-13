@@ -69,4 +69,11 @@ BRANCHING AND MERGING:
 
     How to switch branches: git checkout name-of branch
 
-
+FORKING AND PULL REQUEST:
+    Forking: allows users to become contributers by creating a copy of you remote repository
+                 depending on the type of permission you gave them.
+    
+    Pull request: When contributers make changes to the remote repository
+                    they are working, the submit a pull request to the owner of this repository
+                    where the owner then reviews the code and deciedes wether to add the code 
+                    to the remote repository or not.

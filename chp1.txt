@@ -46,3 +46,9 @@ Creating a gitignore file to prevent pushing files you want to keep private:
 
     https://github.com/github/gitignore : premade collection from github of useful files to ignore
 
+Cloning a github repo:
+    1st: git clone <url>
+    2nd: install all the npm packages using 'npm i'
+    (extra) : do anything else the repo requires you to do
+    3rd: use node to run the server
+

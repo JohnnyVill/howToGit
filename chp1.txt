@@ -76,4 +76,4 @@ FORKING AND PULL REQUEST:
     Pull request: When contributers make changes to the remote repository
                     they are working, the submit a pull request to the owner of this repository
                     where the owner then reviews the code and deciedes wether to add the code 
-                    to the remote repository or not.
+                    to the remote repository or not.0
